@@ -1,0 +1,81 @@
+{% extends 'root.html' %}
+
+{% block head%}
+<title>Contact</title>
+{% endblock%}
+
+{% block body %}
+<header>
+    <div class="mylogo">
+        <img src="static/images/sam_logo.png" width="50" height="50" alt="sam's logo">
+    </div>
+
+    <button class="nav-btn" aria-label="nav-button">
+        <span class="btn"></span>
+    </button>
+
+    <nav class="mynav">
+        <ul class="mynav_ls">
+            <li class="mynav_item"> <a href="#home" class="mynav_link">Home</a></li>
+            <li class="mynav_item"> <a href="#skills" class="mynav_link">Creative Styles</a></li>
+            <li class="mynav_item"> <a href="#about" class="mynav_link">About Me</a></li>
+            <li class="mynav_item"> <a href="#projects" class="mynav_link">Art Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <div>
+
+        <form action="/" method="POST" class="form">
+            <div>
+                <h1>Contact</h1>
+            </div>
+
+            <div>
+                <label for="fname">First Name</label><br>
+                <input type="text" name="fname" placeholder="First name"><br>
+            </div>
+
+            <div>
+                <label for="lname">Last Name</label><br>
+                <input type="text" name="lname" placeholder="Last name"><br>
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Email"><br>
+            </div>
+
+            <div>
+                <label for="message">Message</label><br>
+                <textarea name="message" rows="4" cols="50" placeholder="Type something"></textarea><br>
+            </div>
+
+            <div>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <!--insert your own here-->
+    <a href="mailto:samm.b@gmail.com" class="footer_link">samm.b@gmail.com</a>
+
+    <ul class="social_links">
+        <li class="socialitem">
+            <a class="socialitemlink" href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a>
+        </li>
+        <li class="socialitem">
+            <a class="socialitemlink" href="https://facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+        </li>
+        <li class="socialitem">
+            <a class="socialitemlink:" href="https://instagram.com"><i class="fab fa-instagram-square"></i>
+                Instagram</a>
+        </li>
+    </ul>
+</footer>
+<script src="static/js/index.js"></script>
+{% endblock %}
